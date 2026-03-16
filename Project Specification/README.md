@@ -30,14 +30,21 @@ As this project will be a web-hosted application, it is natural that it will dep
 
 As part of the project source code delivery, you must create a Dockerfile that is able to launch and run your application.
      
-## Project Report Video
+## Project Presentation Video
 
-Your project must contain a video report / presentation (approx 15-20 minutes) containing the following information:
-- An overview of the game giving all details described in ‘Game Overview’ above, including asset sources
-- A description of all `extra features’ put into the game on top of those specifically asked for
-- Demonstrations of all game mechanics, with at least one full level playthrough. Also demo the level editor.
-- Detailed list of controls for the game, and instructions on how to play / what the objectives are
-- Notes on anything you tried to implement that did not end up working
-- This video must contain audio commentary / explanation, and be uploaded to YouTube
-- Post the report video URL to the main README for the project repo
+Since you can get AI to write all the code for you, the final project presentation video is by far the most important part of this project. The project video should contain human-generated audio narration with your group members spending an equal amount of time narrating about the parts they worked on.
+
+Your video must contain the following information:
+
+- Project Demo
+  - You should give a brief demo of your project and all the features you implemented
+  - Since I cannot fully test every project, if a feature is not in the video it does not exist
+  - The demo should be around 5 minutes and show all functionality
+- AI Tools Workflow / Usage
+  - You must demonstrate your overall AI tooling workflow, how it writes code, how you interact with it
+  - You must demonstrate some prompts you gave it (especially the initial prompt) and how it generates code / files
+  - 
+- AI Mistakes / Architecture
+  - You must include examples where the AI made a mistake, or made an architectural decision that you disagreed with and needed to fix somehow
+  - You should show what the AI did, how you interacted with it to fix it, and the prompts you gave to get it to do exactly what you wanted
 
