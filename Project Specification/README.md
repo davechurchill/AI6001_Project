@@ -2,6 +2,8 @@
 
 The final project for AI 6001 should be done in a group of 2 people. If there are any problems with your group members not doing their fair share of the work, you must see me immediately so that we can work out a solution while there is still time to do so. My observation over the years is that 99% of the time this happens, it is due to simple miscommunication between group members and can be solved with a few emails. If you wait until the final week before the project is due to come to me with group-related issues, there is probably nothing that can be done to help at that point. Everyone in this class is an adult, and part of the grade for this group project is your ability to work well with others to accomplish a shared goal.
 
+The overall goal of this project is to get you familiar with modern AI tools, software development, and application deployment. As such, you are allowed to use any amount of AI / LLM tools to create the code for this project in order to create the application. The reason for this is that the final video presentation will be worth the vast majority of the marks for the project, and will go into detail about the overall process of making the software with the AI tools. All of the specifications for the project code and final presentation can be found in the relevant sections below.
+
 ## Marking Scheme
 
 - **Project Demo** (20%)
@@ -12,20 +14,12 @@ The final project for AI 6001 should be done in a group of 2 people. If there ar
   - The final video explaining everything that is required in the specification below
 
 ### Project Overview
-  - Must be implemented using ECS architecture in C++ using only the SFML / ImGui libraries
-  - You may use any course code already written for assignments as the bases for your project game
-  - Game Type Suggestions:
-    - Platformer (MegaMan, Contra, Celeste, Shovel Knight)
-    - Top-Down Shooter (Hotline Miami,  Enter the Gungeon, Brotato, Vampire Survivors)
-    - Action RPG (Diablo, Zelda, Binding of Isaac, Path of Exile, etc)
-  - No assets or levels may be re-used from the class assignments, and gameplay must be significantly different from assignments
-  - Must contain at least 3 pre-built levels, and have a separate 'final boss' battle level
-  -	Must contain a custom menu that allows the player to play the game, edit levels, or select options
-  - Must contain some sort of in-game menu (item selection, inventory, options, etc)
-  - Must contain a level editor that allows for loading, editing, and saving of game levels (see relevant section)
-  - Must contain a ‘game over’ screen indicating when the game has been finished
-  - All levels, player, and game configuration options must be defined in external text files
-  - All assets should be gathered or created by the project group members
+
+  - You MUST use AI tools to write the code for this project, since the point is to get you to learn to use them
+  - You can use any amount of AI tools to write the code for this project
+  - You must create a web application that implements the user interface for a game that is playable with in the browser
+  - You must create a non-trivial AI system for that game that controls a significant amount of gameplay for an AI agent
+  - 
 
 ### Required Gameplay and Mechanics (From Assignments)
 Your game must contain all the following mechanics. You may copy / paste / edit this list for use in your proposal. Your final project submission must contain this list which each finished feature marked as completed.
