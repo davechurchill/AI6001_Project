@@ -1,7 +1,5 @@
 # AI 6001 Project Specification
 
-The final project for AI 6001 should be done in a group of 2 people. If there are any problems with your group members not doing their fair share of the work, you must see me immediately so that we can work out a solution while there is still time to do so. My observation over the years is that 99% of the time this happens, it is due to simple miscommunication between group members and can be solved with a few emails. If you wait until the final week before the project is due to come to me with group-related issues, there is probably nothing that can be done to help at that point. Everyone in this class is an adult, and part of the grade for this group project is your ability to work well with others to accomplish a shared goal.
-
 The overall goal of this project is to get you familiar with modern AI tools, software development, and application deployment. As such, you are allowed to use any amount of AI / LLM tools to create the code for this project in order to create the application. The reason for this is that the final video presentation will be worth the vast majority of the marks for the project, and will go into detail about the overall process of making the software with the AI tools. All of the specifications for the project code and final presentation can be found in the relevant sections below.
 
 ## Marking Scheme
@@ -13,26 +11,24 @@ The overall goal of this project is to get you familiar with modern AI tools, so
 - **Project Report Video** (70%)
   - The final video explaining everything that is required in the specification below
 
-### Project Overview
+## Project Overview
 
+  - The project should be done in a group of 2 people (unless a serious reason prevents this somehow)
   - You MUST use AI tools to write the code for this project, since the point is to get you to learn to use them
-  - You can use any amount of AI tools to write the code for this project
+  - You can use any amount of AI tools to write the code, website, dockerfile, etc for this project
   - You must create a web application that implements the user interface for a game that is playable with in the browser
   - You must create a non-trivial AI system for that game that controls a significant amount of gameplay for an AI agent
-  - 
+  - The game must be somewhat intuitive and enjoyable to play / iteract with
 
-### Required Gameplay and Mechanics (From Assignments)
-Your game must contain all the following mechanics. You may copy / paste / edit this list for use in your proposal. Your final project submission must contain this list which each finished feature marked as completed.
-- [ ] Collisions
-  - [ ] Rectangular bounding box collisions between some entities
-  - [ ] Some collision between player and level geometry (walls, tiles, etc)
-- [ ] Movement
-  - [ ] Your game must contain at least 2 'movement abilitites' with a cooldown or resource cost
-  - Our Game's Movement Abilities:
-    - [ ] Example 1: Double Jump
-    - [ ] Example 2: Dash (with invulnerability)
-    - [ ] Example 3: Wall Jump
-    - [ ] Example 4: Jetpack (with fuel)
+## Required Game Functionality
+
+
+   
+## Docker Deployment
+
+As this project will be a web-hosted application, it is natural that it will depend on other applications such as web server(s), database(s), and other libraries. 
+
+As part of the project source code delivery, you must create a Dockerfile that is able to launch and run your application.
      
 ## Project Report Video
 
