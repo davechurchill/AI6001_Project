@@ -2,6 +2,8 @@
 
 The overall goal of this project is to get you familiar with modern AI tools, software development, and application deployment. As such, you are allowed to use any amount of AI / LLM tools to create the code for this project in order to create the application. The reason for this is that the final video presentation will be worth the vast majority of the marks for the project, and will go into detail about the overall process of making the software with the AI tools. All of the specifications for the project code and final presentation can be found in the relevant sections below.
 
+Note: DO NOT just copy and paste this specification into whatever AI tool you end up using. You should start from scratch building the system incrementally and documenting that process for the video presentation
+
 ## Marking Scheme
 
 - **Project Demo** (20%)
@@ -16,13 +18,17 @@ The overall goal of this project is to get you familiar with modern AI tools, so
   - The project should be done in a group of 2 people (unless a serious reason prevents this somehow)
   - You MUST use AI tools to write the code for this project, since the point is to get you to learn to use them
   - You can use any amount of AI tools to write the code, website, dockerfile, etc for this project
-  - You must create a web application that implements the user interface for a game that is playable with in the browser
-  - You must create a non-trivial AI system for that game that controls a significant amount of gameplay for an AI agent
   - The game must be somewhat intuitive and enjoyable to play / iteract with
 
 ## Required Game Functionality
 
-
+  - You must create a web application that implements the user interface for a game that is playable with in the browser
+    - You must use either html canvas or three.js as the main rendering system for your game
+  - You must create a non-trivial AI system for that game that controls a significant amount of gameplay for an AI agent
+  - Your game must have a user login system where people can log in to save or continue their progress since their last play session
+    - Usernames, passwords, and all data must be stored in a database (mongodb, for example)
+    - Security is not of great concern with this project, as long as the functionality works
+  - Your game does not need to be able to be played by 2 humans at the same time, but you need to have an AI player that you either play with or against in some way
    
 ## Docker Deployment
 
