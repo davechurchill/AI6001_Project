@@ -34,16 +34,23 @@ As part of the project source code delivery, you must create a Dockerfile that i
 
 Since you can get AI to write all the code for you, the final project presentation video is by far the most important part of this project. The project video should contain human-generated audio narration with your group members spending an equal amount of time narrating about the parts they worked on.
 
+Your comments into the workflow / usage of the AI tools, how you used them, whether or not they made mistakes, whether you like this sort of development, is the most important part of the video. I want to get YOUR insights into the process of making an application with AI tools.
+
 Your video must contain the following information:
 
 - Project Demo
   - You should give a brief demo of your project and all the features you implemented
   - Since I cannot fully test every project, if a feature is not in the video it does not exist
   - The demo should be around 5 minutes and show all functionality
-- AI Tools Workflow / Usage
-  - You must demonstrate your overall AI tooling workflow, how it writes code, how you interact with it
-  - You must demonstrate some prompts you gave it (especially the initial prompt) and how it generates code / files
-  - 
+  - You should specifically showcase the smart behavior of the AI system in your game
+- Changes Over Time
+  - I want to see examples of the user interface / game over time as new features were added or the design was changed
+  - Explain how you experimented with different UIs and how you got the AI to
+  - Keep recordings or screenshots of different versions throughout development
+- AI Tools Workflow / Usage Demonstration
+  - Overall AI tooling workflow, how it writes code, how you interact with it
+  - Examples of prompts you gave it (especially the initial prompt) and how it generates code / files
+  - You should describe whether or not you like this process, and how you think it would feel if you did this professionally
 - AI Mistakes / Architecture
   - You must include examples where the AI made a mistake, or made an architectural decision that you disagreed with and needed to fix somehow
   - You should show what the AI did, how you interacted with it to fix it, and the prompts you gave to get it to do exactly what you wanted
