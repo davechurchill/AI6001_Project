@@ -15,6 +15,10 @@ Project Group Members:
 * Group Member Name 1 (Student ID #, email)
 * Group Member Name 2 (Student ID #, email)
 
+Project URL
+
+* Paste your hosted web application URL here so I can test it
+
 Project Videos:
 
 * Project Presentation: YouTube URL
