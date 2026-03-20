@@ -97,6 +97,9 @@ Your comments into the workflow / usage of the AI tools, how you used them, whet
 
 Your video must contain the following information:
 
+- Project Structure and Overall Architecture
+  - You must understand and explain the overall project architecture
+  - Directory structure must be clean and well reasoned
 - Project Demo
   - You should give a brief demo of your project and all the features you implemented
   - Since I cannot fully test every project, if a feature is not in the video it does not exist
