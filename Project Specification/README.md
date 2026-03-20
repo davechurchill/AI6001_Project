@@ -20,6 +20,59 @@ Note: DO NOT just copy and paste this specification into whatever AI tool you en
   - You can use any amount of AI tools to write the code, website, dockerfile, etc for this project
   - The game must be somewhat intuitive and enjoyable to play / iteract with
 
+## Technologies Used
+
+- GitHub
+  - Version control, Project Submission 
+- HTML and CSS
+  - Layout / Styling for the web application
+- JavaScript / Node / Express
+  - Code for website / back end functionality
+  - Node / Express for serving the content
+- MongoDB
+  - Simple database that can directly store JSON objects for game data
+- Docker
+  - Use for creating container for deployment
+
+## Example Project Structure
+ 
+```text
+my-game/
+│
+├── client/                     # frontend (pure static files served by Node)
+│   ├── index.html              # main entry point for the game
+│   ├── css/                    # styles
+│   │   └── styles.css          # global styles for the game
+│   ├── js/                     # frontend JavaScript
+│   │   └── main.js             # game entry point / loop / initialization
+│   └── assets/                 # images, audio, fonts, etc.
+│       ├── images/
+│       ├── audio/
+│       └── fonts/
+│
+├── server/
+│   ├── server.js               # main server entry (express setup, routes, static serving)
+│   ├── db.js                   # mongodb connection setup (mongoose.connect)
+│   │
+│   ├── api/                    # API endpoints (grouped by feature)
+│   │   ├── auth.js             # login + register routes (user authentication)
+│   │   └── saves.js            # save/load game routes
+│   │
+│   ├── models/                 # database schemas (mongoose models)
+│   │   ├── User.js             # user schema (username, password hash, etc.)
+│   │   └── Save.js             # save data schema (game state, timestamps, etc.)
+│   │
+│   ├── package.json            # backend dependencies + scripts
+│   └── .env                    # environment variables (DB URI, secrets, ports)
+│
+├── docker/
+│   ├── Dockerfile              # builds the Node app container
+│   └── docker-compose.yml      # runs app + mongodb together
+│
+├── .gitignore                  # ignores node_modules, .env, etc.
+└── README.md                   # project description + setup instructions
+```
+
 ## Required Game Functionality
 
   - You must create a web application that implements the user interface for a game that is playable with in the browser
