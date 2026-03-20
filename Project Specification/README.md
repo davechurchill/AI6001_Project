@@ -37,40 +37,65 @@ Note: DO NOT just copy and paste this specification into whatever AI tool you en
 ## Example Project Structure
  
 ```text
-my-game/
+my-chess-game/
 │
-├── client/                     # frontend (pure static files served by Node)
-│   ├── index.html              # main entry point for the game
-│   ├── css/                    # styles
-│   │   └── styles.css          # global styles for the game
-│   ├── js/                     # frontend JavaScript
-│   │   └── main.js             # game entry point / loop / initialization
-│   └── assets/                 # images, audio, fonts, etc.
+├── client/                              # frontend files served to the browser
+│   ├── index.html                       # main game page
+│   ├── play.html                        # page for playing a live game
+│   ├── history.html                     # page listing past games
+│   ├── replay.html                      # page for viewing a replay
+│   │
+│   ├── css/
+│   │   ├── styles.css                   # shared global styles
+│   │   ├── play.css                     # styles for play screen
+│   │   ├── history.css                  # styles for past games page
+│   │   └── replay.css                   # styles for replay screen
+│   │
+│   ├── js/
+│   │   ├── main.js                      # shared startup logic
+│   │   ├── play.js                      # live game logic in the browser
+│   │   ├── history.js                   # loads and displays past games
+│   │   ├── replay.js                    # replay controls and playback
+│   │   ├── board.js                     # board rendering and interaction
+│   │   └── ui.js                        # status text, buttons, move list, etc.
+│   │
+│   └── assets/
 │       ├── images/
-│       ├── audio/
-│       └── fonts/
+│       │   ├── board/                   # board graphics
+│       │   └── pieces/                  # chess piece images
+│       └── audio/
+│           ├── move.wav                 # move sound
+│           ├── capture.wav              # capture sound
+│           └── check.wav                # check sound
 │
-├── server/
-│   ├── server.js               # main server entry (express setup, routes, static serving)
-│   ├── db.js                   # mongodb connection setup (mongoose.connect)
+├── server/                              # Node backend
+│   ├── server.js                        # express setup, static serving, API mounting
+│   ├── db.js                            # MongoDB connection setup
+│   ├── package.json                     # backend dependencies and scripts
+│   ├── .env                             # environment variables
 │   │
-│   ├── api/                    # API endpoints (grouped by feature)
-│   │   ├── auth.js             # login + register routes (user authentication)
-│   │   └── saves.js            # save/load game routes
+│   ├── api/
+│   │   ├── auth.js                      # login/register routes
+│   │   ├── games.js                     # save/load/list completed games
+│   │   └── ai.js                        # route for requesting an AI move
 │   │
-│   ├── models/                 # database schemas (mongoose models)
-│   │   ├── User.js             # user schema (username, password hash, etc.)
-│   │   └── Save.js             # save data schema (game state, timestamps, etc.)
+│   ├── models/
+│   │   ├── User.js                      # user account schema
+│   │   └── Game.js                      # saved game + move history schema
 │   │
-│   ├── package.json            # backend dependencies + scripts
-│   └── .env                    # environment variables (DB URI, secrets, ports)
+│   ├── chess/
+│   │   ├── ChessGame.js                 # board state, legal moves, rules, move application
+│   │   └── ChessAI.js                   # AI search + evaluation in one file
+│   │
+│   └── utils/
+│       └── auth.js                      # password hashing / token helpers
 │
 ├── docker/
-│   ├── Dockerfile              # builds the Node app container
-│   └── docker-compose.yml      # runs app + mongodb together
+│   ├── Dockerfile                       # container for Node app
+│   └── docker-compose.yml               # runs app + MongoDB together
 │
-├── .gitignore                  # ignores node_modules, .env, etc.
-└── README.md                   # project description + setup instructions
+├── .gitignore                           # ignores .env, node_modules, etc.
+└── README.md                            # project overview and setup instructions
 ```
 
 ## Required Game Functionality
